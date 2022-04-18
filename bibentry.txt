@@ -1,0 +1,9 @@
+% bibentry template for lsst.bib in https://github.com/lsst/lsst-texmf/blob/main/texmf/bibtex/bib/lsst.bib
+
+@DocuShare{RTN-035,
+   author = { Phil Marshall },
+    title = {The Rubin Operations Center at SLAC},
+     year = 2022,
+    month = Apr,
+   handle = {RTN-035},
+      url = {https://rtn-035.lsst.io } }
