@@ -32,6 +32,7 @@ Links
 Editing this technical note
 ===========================
 
-You can make modifications in "suggesting mode" to the Google doc linked above, and then update the status line in the README (so that you can start a pull request).
+You can make modifications in "suggesting mode" to the Google doc linked above.
+Then, you should update the status line in the README and submit a pull request.
 
 The published technote at https://rtn-035.lsst.io will be automatically rebuilt when your pull request is merged into the ``main`` branch on `GitHub <https://github.com/lsst/rtn-035>`_.
