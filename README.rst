@@ -17,7 +17,7 @@ Status
 This draft technote is a working design document, which the authors are using to derive the requirements of the remote observing room at SLAC and its surrounding collaboration and visitor space.
 It will eventually become a document recording the design decisions made.
 
-*Most recent update: initial draft by Phil, to start the use case work.*
+*Most recent update 2023-02-10: capturing interim/final SLAC Control Room design concept, starting in 114-A and expanding (in FY24) across the full width of the space.*
 
 Links
 =====
