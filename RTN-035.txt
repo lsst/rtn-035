@@ -1,11 +1,20 @@
-﻿The SLAC Rubin Operations Center | RTN-035 | Latest Revision Date 2022-04-22 C:\Users\robm\Pictures\Colorized RGB - use over white-trimmed.png 
+﻿The SLAC Rubin Operations Center | RTN-035 | Latest Revision Date 2022-07-12 C:\Users\robm\Pictures\Colorized RGB - use over white-trimmed.png 
 The Rubin Operations Center at SLAC
 
 
-Phil Marshall, Stuart Marshall, Tony Johnson, 
-Richard Dubois, Seth Digel and others
-RTN-035
-Latest Revision Date: April 22, 2022
+Phil Marshall, Stuart Marshall, Tony Johnson
+
+
+Input invited from: 
+Kevin Reil, Andy Rasmussen, Yousuke Utsumi, Aaron Roodman, Steve Ritz (LSST Camera Team),
+Richard Dubois, Hsin-Fang Chiang, Andy Clements, Wil O’Mullane (Rubin Data Production), 
+Chuck Claver, Sandrine Thomas, Shuang Liang, Yijung Kang (Rubin Observatory Operations),
+ Bob Blum, Christine Soldahl, Ralf Kaehler (Rubin Director’s Office), 
+Seth Digel, Jim Chiang (LSST DESC), 
+Greg Madejski (Rubin Community Engagement Team),
+Martha Siegel, Andrea Davies, Risa Wechsler, Xinnan Du (KIPAC)
+RTN-035 DRAFT
+Latest Revision Date: July 12, 2022
 
 
   
@@ -19,22 +28,14 @@ Release
 	2022-04-22
 	Initial outline
 	Phil Marshall
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
+	0.2
+	2022-07-12
+	Proposed layouts based on Summit and Base Control Room visits
+	Phil Marshall
+	0.3
+	2023-02-10
+	Updated to capture interim/final SLAC Control Room concept (rooms 114-A-D)
+	Phil Marshall
 	
 
 	
@@ -106,29 +107,36 @@ Change Record        1
 Executive Summary        4
 Definitions of Terms        5
 Reference Documents        5
-Overview        1
-Key User Groups        1
-Use Cases        3
-Use Case Template: Summary of Activity (Timeframe)        3
-Use Case 1: Remote Observing Support During Survey Operations (FY25 onwards)        4
-Use Case 2: Remote Observing Support During Commissioning (FY23-FY24)        5
-Use Case 3: Observing Specialist Training (Starting Fall 2022)        5
-Use Case: Remote Camera Control System Support (FY23 onwards)        5
-Use Case: USDF Processing Monitoring (Starting Winter 2023)        5
-Use Case: Rubin Operations Team Collaborative Work        5
-Use Case: LSST DESC Sprint        5
-Use Case: SLAC Public Tour        5
-Center Components and Requirements        6
-Current FKB 1st Floor Plan        6
-Rubin Summit Facility Control Room        8
-Implementation Plan        8
-Center Design Validation and User Testing        8
-Operational Instructions        9
+Proposed Design        1
+Key User Groups        4
+Use Cases        5
+Use Case Template: Summary of Activity (Timeframe)        6
+Use Case 1: Remote Observing Support in Survey Operations (FY25 onwards)        6
+Use Case 2: Remote Observing Support during Commissioning (FY23-FY24)        8
+Use Case 3: Observing Specialist Training (Starting Fall 2022)        8
+Use Case 4: Remote Camera Control System Support (FY23 onwards)        8
+Use Case 5: Rubin Operations Team Collaborative Work        8
+Use Case 6: USDF Processing Monitoring (Starting Winter 2023)        9
+Use Case 7: LSST DESC Sprint        9
+Use Case 8: SLAC Public Tour        9
+Components, Constraints and Requirements        11
+Current FKB 1st Floor Plan        11
+Rubin Summit Facility Control Room        13
+Control Room Requirements        14
+Collaboration Area Requirements        14
+Observing Specialist Office Requirements        15
+Visitor Space Requirements        15
+Public Access Requirements        15
+Implementation Plan        16
+Center Design Validation and User Testing        17
+Operational Instructions        18
 
 
 The Rubin Operations Center at SLAC
 Executive Summary
-As one of the operating partners for Rubin Operations, SLAC is responsible for the stewardship of the LSST Camera: SLAC staff will provide scientific and technical support for LSST Cam operations at the Summit Facility in Chile, and SLAC Observing Specialists will perform night-time operations both on-site and remotely. To fulfill these obligations, SLAC will need (and has budgeted for) a remote observing room (providing a direct video link and mirrored views of the observatory controls at the Rubin Summit Facility), and associated collaboration space. In this design document we derive the specifications of this remote observing room as the central component of a more general, multi-purpose Rubin Operations Center, situated in the 1st floor of the Kavli Building at SLAC. This Center will support collaboration by others in the Rubin Operations team (including the staff processing the LSST image data at the Rubin US Data Facility), and with members of the LSST Dark Enerrgy Science Collaboration. It will also act as a hub for the wider KIPAC community as it does science with the LSST data, and be a major destination for visitors on lab tours and other public outreach events. 
+As one of the operating partners for Rubin Operations, SLAC is responsible for the stewardship of the LSST Camera: SLAC staff will provide scientific and technical support for LSST Cam operations at the Summit Facility in Chile, and SLAC Observing Specialists will perform night-time operations both on-site and remotely. To fulfill these obligations, SLAC will need (and has budgeted for) a remote observing room, the “SLAC Control Room” (which will provide a direct video link and mirrored views of the observatory controls at the Rubin Summit Facility), and associated collaboration space. In this design document we derive the specifications of the SLAC Control Room as the central component of a more general, multi-purpose Rubin Operations Center, situated on the 1st floor of the Kavli Building at SLAC. This Center will support collaboration by others in the Rubin Operations team (including the staff processing the LSST image data at the Rubin US Data Facility), and with members of the LSST Dark Energy Science Collaboration. It will also act as a hub for the wider KIPAC community as it does science with the LSST data, and be a major destination for visitors on lab tours and other public outreach events. 
+
+
 Currently, this is a working design document  - as you can see, we are using it to document the Center’s use cases and specifications as we develop them. When the design has been implemented, this document will have evolved to serve as a record of our design decisions.
 ________________
 Definitions of Terms 
@@ -136,31 +144,47 @@ FKB – Fred Kavli Building (051) at SLAC
 ROO – Rubin Observatory Operations, a department within Rubin Operations
 RDP – Rubin Data Production, a department within Rubin Operations
 I&S – Infrastructure and Support Team, a team in RDP
-ROR – Remote Observing Room
+SCR – SLAC Control Room
 
 
+Supporting Documents
+RTN-035 Figures
 Reference Documents 
 “051 1st Floor.pdf” (SLAC Building and Space Management Geographic Information System)
 
 
-The SLAC Rubin Operations Center
-Overview
-High-level overview of the design, and the goals the design seeks to accomplish. This section should make clear  the purpose of the center.
-Key User Groups
-In this section, we gather and present relevant information about the Center’s target users, to help us understand who those users are, and what good Center design means to them (via their functional and aesthetic preferences). Elsewhere in this document we refer to this section for the rationale behind individual Center design decisions.
-The ROO SLAC Observing Specialists and Observatory Science Team. This group contains the heaviest users of the ROR. The SLAC Obs Specs will need to support night time operations from SLAC (in 20% of their time back at SLAC after they finish their deployments to Chile). The Camera Support Scientists at SLAC will use the ROR to provide occasional remote support for night time operations, and to interact with Summit staff during the day. They will also use the ROR to train the SLAC Obs Specs on Camera operations before they deploy to Chile. 
-The ROO Camera Control Software Engineers. The CCS group at SLAC may use the ROR for troubleshooting, evolving and testing the Camera Control Software, when a larger format monitor or video link than a laptop gives is needed (eg to support wider collaboration).
-The Rubin/SLAC US Data Facility Staff.  The RDP Infrastructure & Support Team includes a number of SLAC-based groups who will need to collaborate with remote colleagues to transfer and process the LSST data. The RDP Data Curation Group and RDP Processing Group may benefit from data visualization and large-format video link capabilities of an Operations Center, as well as a dedicated collaboration space in which to meet with other local US Data Facility staff (eg from the TID Shared Data Facility) or those at Fermilab, Brookhaven, Rubin HQ in Tucson, and the Base and Summit facilities in Chile. 
-The LSST DESC. SLAC regularly hosts members of the LSST Dark Energy Science Collaboration who visit in order to collaborate with SLAC staff.  Demand for such visits is likely to increase as we enter survey operations, and the collaboration investigates systematic errors in its early cosmology analysis. Visits may be long term (eg several months, by DOE graduate student fellows, or faculty on sabbatical) as well as short (eg a few days). SLAC staff routinely interact with the LSST DESC working groups via zoom calls, which could be usefully taken in group hybrid mode in a meeting room with projector. DESC runs annual Sprint Weeks, which have been moving towards a multi-site hybrid format: each hub needs to support 10-20 visitors all working in close proximity, while connected via good video links to the others.
-The KIPAC LSST Science Community. As well as the SLAC staff, many other KIPAC members will be carrying out analyses of the LSST data. These scientists are able to interact with and learn from the dedicated Rubin staff  at venues such as the KEG and Rubin@SLAC meeting series. 
-SLAC Public Tour Groups. SLAC regularly hosts groups of schoolchildren and members of the general public, providing tours of the lab facilities. The Rubin Operations Center will be an appealing stop on these tours, offering the visitors a window into how Rubin images are acquired and processed, and how its scientists and engineers work together. They will be inspired by Rubin and its connections to SLAC, including the construction and operation of the world’s largest digital camera.
+
+
+The Rubin Operations Center at SLAC
+Proposed Design
+We propose to re-purpose the first floor of the Kavli Building as the Rubin Operations Center at SLAC. This area will include 1) a securely partitioned area to act as the SLAC Control Room of Rubin Observatory (supporting remote night-time observing, and day-time collaboration with Summit and Base Facility staff), 2) an open plan collaboration area for Rubin Operations staff to work together in close vicinity to the Control Room, and 3) office space for resident Observing Specialists and Rubin, DESC and KIPAC visitors. We expect the Control Room and collaboration area to be used during LSST Camera commissioning (from winter FY23 through summer FY24), and the Observing Specialists to need office space from January FY25.
+The figure below shows our preferred layout. The cubicles are removed and replaced by a secure Control Room partition with partial glass walls, plus an open plan collaboration area with dedicated video meeting facilities. The lockable offices, plus three visitor desks, are preserved at the Western end of the room. The collaboration area would contain a whiteboard, and be decorated with posters describing the observatory, its survey, the LSST Camera, and the data facilities.
+In the following sections, we derive the requirements behind this design. We first introduce the key users of the SLAC Rubin Operations Center, and then sketch a set of use cases for it. After noting some additional constraints associated with the first floor space, and Rubin’s needs, we define the requirements which lead to the design given. 
+________________
+  
+
+Figure 1: Proposed initial design, in the 1st floor of the Fred Kavli Building (051) at SLAC. Lockable room 114-A is re-purposed as the (interim) Rubin SLAC Control Room, supporting remote observing by two people during early commissioning in FY23Q3 through FY24Q2. 
+  
+
+Figure 2: Proposed design for the final Rubin SLAC Control Room. As part of a wider KIPAC remodel, rooms 114-A through 114-D are combined into a single lockable room, large enough to contain both the OPS and CAM displays.  Configuring these displays to toggle between Rubin remote observing and general purpose videoconferencing would allow the Rubin SLAC Control Room to serve as an additional  meeting/huddle room. Target availability date: FY24Q2, to support LSSTCam “First Photon” (currently due April 2024). 
+
+
 
 
 
 
 ________________
+Key User Groups
+In this section, we gather and present relevant information about the Center’s target users, to help us understand who those users are, and what good Center design means to them (via their functional and aesthetic preferences). Elsewhere in this document we refer to this section for the rationale behind individual Center design decisions.
+The ROO SLAC Observing Specialists and Observatory Science Team. This group contains the heaviest users of the SLAC Control Room. The SLAC Obs Specs will need to support night time operations from SLAC (in 20% of their time back at SLAC after they finish their deployments to Chile). The Camera Support Scientists at SLAC will use the Control Room to provide occasional remote support for night time operations, and to interact with Summit staff during the day. They will also use the Control Room to train the SLAC Obs Specs on Camera operations before they deploy to Chile. 
+The ROO Camera Control Software Engineers. The CCS group at SLAC may use the SLAC Control Room for troubleshooting, evolving and testing the Camera Control Software, when a larger format monitor or video link than a laptop gives is needed (e.g. to support wider collaboration).
+The Rubin/SLAC US Data Facility Staff.  The RDP Infrastructure & Support Team includes a number of SLAC-based groups who will need to collaborate with remote colleagues to transfer and process the LSST data. The RDP Data Curation Group and RDP Processing Group may benefit from data visualization and large-format video link capabilities of an Operations Center, as well as a dedicated collaboration space in which to meet with other local US Data Facility staff (eg from the TID Shared Data Facility) or those at Fermilab, Brookhaven, Rubin HQ in Tucson, and the Base and Summit facilities in Chile. 
+The LSST DESC. SLAC regularly hosts members of the LSST Dark Energy Science Collaboration who visit in order to collaborate with SLAC staff.  Demand for such visits is likely to increase as we enter survey operations, and the collaboration investigates systematic errors in its early cosmology analysis. Visits may be long term (e.g. several months, by DOE graduate student fellows, or faculty on sabbatical) as well as short (e.g. a few days). SLAC staff routinely interact with the LSST DESC working groups via zoom calls, which could be usefully taken in group hybrid mode in a meeting room with projector. DESC runs annual Sprint Weeks, which have been moving towards a multi-site hybrid format: each hub needs to support 10-20 visitors all working in close proximity, while connected via good video links to the others.
+The KIPAC LSST Science Community. As well as the SLAC staff, many other KIPAC members will be carrying out analyses of the LSST data. These scientists are able to interact with and learn from the dedicated Rubin staff  at venues such as the KEG and Rubin@SLAC meeting series. 
+SLAC Public Tour Groups. SLAC regularly hosts groups of schoolchildren and members of the general public, providing tours of the lab facilities. The Rubin Operations Center will be an appealing stop on these tours, offering the visitors a window into how Rubin images are acquired and processed, and how its scientists and engineers work together. They will be inspired by Rubin and its connections to SLAC, including the construction and operation of the world’s largest digital camera.
 Use Cases
-How do we expect the various user groups to use the Center? In this section we present a set of use cases, that sketch out these expectations and allow us to derive the features of the Center’s design.  The template for these use cases, with guidelines on what to include, is given below.[a] 
+How do we expect the various user groups to use the Center? In this section we present a set of use cases, that sketch out these expectations and allow us to derive the features of the Center’s design.  The template for these use cases, with guidelines on what to include, is given below. 
+________________
 Use Case Template: Summary of Activity (Timeframe)
 Preamble. Provide any needed high level introduction to this use case. This is probably best done after filling out the bullet points below.
 * Local Actors: List of primary roles (and current staff names, as appropriate) of people using the center in person (at SLAC).  
@@ -172,53 +196,132 @@ Preamble. Provide any needed high level introduction to this use case. This is p
 ________________
 
 
-
-
-Use Case 1: Remote Observing Support During Survey Operations (FY25 onwards)
-This is the primary use case of the remote observing room (ROR) part of the Center.
+Use Case 1: Remote Observing Support in Survey Operations (FY25 onwards)
+This is the primary use case of the SLAC Control Room part of the Ops Center.
 * Local Actors: SLAC Observing Specialist(s) (e.g. Yijung Kang and Shuang Liang, at SLAC FY25-FY26).  
 * Remote Actors: NOIRLab and SLAC Observing Specialists and other Rubin staff at the Summit Facility, other Rubin Ops staff (in La Serena, Tucson, or the Bay Area) on call.
-* Scenario: SLAC Observing Specialist(s)in the remote observing room (ROR) from c. 1500 CLT = 1200 PDT (to support Summit Facility staff doing afternoon calibrations) through the night shift, which ends c. 0800 CLT = 0500 PDT. SLAC Obs Specs use dedicated video link to talk to Summit staff, and view the same kinds of display monitors (eg LOVE, weather display, telescope and instrument status screens etc) as in the Summit Control Room to help diagnose problems. Access to the various Rubin control systems (CCS, OCS etc)  is enabled via secure login to enable remote SLAC Obs Specs to provide cover for Summit Obs Specs (eg while they investigate problems elsewhere in the dome). 
-* Possible Failure Modes: The Rubin controls could be mis-used if not sufficiently protected (eg if a lone SLAC Obs Spec leaves a monitor unattended, or if no login screen is used). Balance against SLAC Obs Spec inefficiency and frustration if they have to keep repeatedly logging in (to get past screensavers etc). Video communication with the Summit could be difficult if there is a lot of background noise in the ROR. 
-* Space Needs: There are multiple Summit Facility Control Room displays (see Figure below) in a sizeable space (see Figure below). The SLAC ROR needs to contain enough monitors, and operator seats, to enable the SLAC Obs Specs and other SLAC staff to work together with the Summit staff.  The ROR can be open to the Center, but monitors showing control system interfaces will need to be password-protected and guarded when in use, and the background noise during California afternoons and evenings will need to be kept to a minimum. Desks with comfortable chairs for 4 operations staff are needed, with good views of all monitors and the video link. A book case to hold reference manuals may be needed.
+* Scenario: SLAC Observing Specialist(s)in the SLAC Control Room from c. 1500 CLT = 1200 PDT (to support Summit Facility staff doing afternoon calibrations) through the night shift, which ends c. 0800 CLT = 0500 PDT. SLAC Obs Specs use dedicated video link to talk to Summit staff, and view the same kinds of display monitors (eg LOVE, weather display, telescope and instrument status screens etc) as in the Summit Control Room to help diagnose problems. Access to the various Rubin control systems (CCS, OCS etc)  is enabled via secure login to enable remote SLAC Obs Specs to provide cover for Summit Obs Specs (eg while they investigate problems elsewhere in the dome). 
+* Possible Failure Modes: The Rubin controls could be mis-used if not sufficiently protected (eg if a lone SLAC Obs Spec leaves a monitor unattended, or if no login screen is used). Balance against SLAC Obs Spec inefficiency and frustration if they have to keep repeatedly logging in (to get past screensavers etc). Video communication with the Summit could be difficult if there is a lot of background noise in the SLAC Control Room. 
+* Space Needs: There are multiple Summit Facility Control Room displays (see Figure below) in a sizeable space (see Figure below). The SLAC Control Room needs to contain enough monitors, and operator seats, to enable the SLAC Obs Specs and other SLAC staff to work together with the Summit staff.  The Control Room can be visible to the rest of the Center, but monitors showing control system interfaces will need to be password-protected and secured when in use via a partition wall with lockable door, and the background noise during California afternoons and evenings will need to be kept to a minimum. Desks with comfortable chairs for 4 operations staff are needed, with good views of all monitors and the video link. A book case to hold reference manuals may be needed.
 * Tech Needs: Monitors and computers as advised by ROO in order to enable sufficient emulation of the Summit Facility Control Room. Network connection must be high enough to enable video traffic at required volume, with very high reliability. A dedicated video communication system is needed. Requirements on all the above equipment need to be collected from Rubin. A coffee machine, fridge and microwave are all needed in a nearby kitchen (preferably inside the Center).
 
 
-Use Case 2: Remote Observing Support During Commissioning (FY23-FY24)
-We distinguish this case from the remote observing support use case in survey operations, because it might be that not all the equipment is needed in the ROR during this period.
+________________
+
+
+Use Case 2: Remote Observing Support during Commissioning (FY23-FY24)
+We distinguish this case from the remote observing support use case in survey operations, because it might be that not all the equipment is needed in the SLAC Control Room during this period. Needs input from SIT-COM.
+________________
+
+
 Use Case 3: Observing Specialist Training (Starting Fall 2022)
-Use Case: Remote Camera Control System Support (FY23 onwards)
-Use Case: USDF Processing Monitoring (Starting Winter 2023)
-Use Case: Rubin Operations Team Collaborative Work
-Use Case: LSST DESC Sprint
-Use Case: SLAC Public Tour
+This case may not be different from Use Cases 1 and 2, because Obs Spec training may be equal to Obs Spec remote observing. Needs input from Nighttime Ops & Obs Science teams.
+________________
+
+
+Use Case 4: Remote Camera (Control System) Support (FY23 onwards)
+The Camera Support Scientists and Camera Control System engineers at SLAC will be looking to trouble shoot the LSST Cam as it is installed at the Summit Facility, and then support its use in operations.  This use case captures any particular needs for this activity.
+* Local Actors: Camera Support Scientists and Camera Control System engineers at SLAC.
+* Remote Actors: Summit staff in Nighttime Operations, Summit Engineering, Observatory Science, Observatory Software teams.
+* Scenario: Brief description of the activity, including when (in the day) it starts and ends, what interactions are involved, what hardware and software are used, etc. The Camera Support Scientists and Camera Control System engineers can use this area/system for daily checkup in the day time in Pacific time. Also, when the Camera has a problem, Camera Support Scientists and Camera Control System engineers need to get together to assess the situation with people on the summit. 
+* Possible Failure Modes: Brief notes on how things could go wrong, if the space or technology provided is somehow inadequate. 1) Lack of communication with people on summit or other remote place with summit control could lead the Camera (as well as the Observatory) to a dangerous situation. For example, from a safety perspective, we don't want to expose too much light on CCDs with HV on. But it could happen in the daytime when summit people open the dome without notifying it to Camera Support Scientists by opening the Camera shutter by accident. To prevent this kind of failure we need to have a mirroring system of the summit console.  2) If Camera Support Scientists and Camera Control System engineers using the remote control system remain logged in and leave it unattended, there is a risk that an unintended person could take control of the Camera (or the observatory).
+* Space Needs: Brief notes on how much space is needed and what its properties are, given the scenario and failure modes above. Include private vs open, security level needed, furniture required, lighting, sound, hospitality, etc. These will drive the requirements of the Center. We need a mechanism to lock the area to prevent unintentional control.[a][b]
+* Tech Needs: Brief notes on what kinds of equipment are needed, given the scenario and failure modes above. Include computers, screens, projectors, network connections, special installations etc. These will drive the requirements of the Center. The same setup of computers at the summit is needed. In those displays, VNC to share display content and cursor with a remote control is helpful to understand what people on the summit are doing or trying. This VNC mechanism needs to have a lock mechanism which can be managed by summit people. Availability of intranet access to the summit (virtual subnet of Rubin Observatory) is needed. Wifi for laptop computers are also needed. This wifi network should have its own authentification so that unintended persons can't connect. 
+________________
+
+
+Use Case 5: Rubin Operations Team Collaborative Work
+Various Rubin groups and teams will be looking to meet up and work collaboratively with Rubin staff outside the lab. All Rubin’s teams are geographically distributed among a handful of sites, including Tucson (HQ), the Summit Facility, the Base Facility in La Serena, and the France and UK Data Facilities. 
+* Local Actors: Key Rubin operations teams with members at SLAC include: ROO Nighttime Operations (including the SLAC Observing Specialist postdocs), ROO Observatory Science (including the Camera Support Scientists), ROO Observatory Software (including Camera Control System Engineers), RDP Infrastructure & Support (including the Databases, Data Movement, Processing, and US DF Infrastructure groups), RDP Algorithms & Pipelines and RPF Verification & Validation, RPF Community Engagement.  
+* Remote Actors: Same list of teams as above. 
+* Scenario: Local staff gather to work together (brainstorming, pair-coding, etc), and/or to meet with others in their team working remotely, in a hybrid zoom meeting. Could be any time of day, and involve screen-sharing, whiteboard use.
+* Possible Failure Modes: Hybrid meetings will fail if audio/video is not good enough to enable full participation by everyone present (staff will default to individual zoom attendance instead). If protocols to limit background noise for the Control Room are too strict, this could overly constrain hybrid or in-person meetings in the collaboration area, pushing the local actors to take their meetings elsewhere and leaving the Ops Center under-used.
+* Space Needs: Collaboration will happen at a variety of scales, from 2 people (who want more space or better tech support than their individual offices can provide) up to 20 people (meeting seminar-room style). Collaboration space needs to be flexible/reconfigurable.
+* Tech Needs: Dedicated video meeting set up (with cameras and microphones, as in SUSB meeting rooms, would be ideal). Additional projector for seminar-style talks could also be useful. Several small tables close to video screen might work best, but they should be moveable. 
+________________
+
+
+Use Case 6: USDF Processing Monitoring (Starting Winter 2023)
+Similar scenario to Use Case 5: Rubin Ops Team Collaborative Work.  Included here to capture any particular needs, should there be any. A dedicated display showing current Rubin processing workflows? Needs input from the Processing Group about what they would find useful.
+________________
+
+
+Use Case 7: LSST DESC Sprint
+Similar scenario to Use Case 5: Rubin Ops Team Collaborative Work.  Included here to capture any particular needs, should there be any. Needs input from DESC.
+________________
+
+
+Use Case 8: SLAC Public Tour
+Once in use, the Rubin SLAC Control Room could become a major destination on the SLAC public tour, with people able to “visit the observatory”, see the Rubin staff at work, and marvel at the operation of a billion dollar astronomical facility. Special cases of public tours include tours given to school parties, SLAC and KIPAC donors, and visitors from funding agencies.
+* Local Actors: Rubin operations staff using the SLAC Control Room, plus members of the public on SLAC tours, and their SLAC tour guides. Tour parties could include schoolchildren and/or the general public, and SLAC stakeholders such as donors and funding agency staff.
+* Remote Actors: None. (Summit facility staff will be passively on screen).
+* Scenario: 15-min stop on a public tour. Could be any time during working hours (9am-5pm), although afternoons are when there will be most activity from the Rubin staff. Tour parties will view the various Rubin video displays while not disturbing the Rubin staff, and learn about the observatory through posters, data visualization displays etc in the wider collaboration area.  
+* Possible Failure Modes: Rubin staff could be disturbed by excessive tour group noise or other aspects of the presence of a tour group. A glass partition between the Control Room and the collaboration area of the Ops Center would mitigate this. If the partition is not glass (or contain a large window) then the tour groups would not be able to see anything without entering the room.
+* Space Needs: The Control Room will need a (preferably external) viewing area in which a typical size tour group (20-30 people) can congregate. This should contain posters etc introducing and explaining the work of the Rubin  operations team at SLAC (including operation and maintenance of LSST Cam).
+* Tech Needs: As well as the observatory displays of the Control Room, public tours would benefit from a projector system in the collaboration area, to support tourguide presentations.
+________________
+
+
+
+
 
 
 ________________
-Center Components and Requirements
-From the use cases above, and from some additional constraints and assumptions, we now derive the design of the Center. Constraints include the current layout of the FKB 1st Floor area, and the layout and contents of the Summit Facility Control Room that the SLAC ROR will need to connect to and emulate. Our plan has a number of components: for each one, we list the technical  requirements of its design. The components of the SLAC Rubin Operations Center are:
-* Remote Observing Room (ROR)
-* Collaboration Area 
+Components, Constraints and Requirements
+From the use cases above, and from some additional constraints and assumptions, we now derive the requirements of the Center. Constraints include the current layout of the FKB 1st Floor area, and the layout and contents of the Summit Facility Control Room that the SLAC Control Room will need to connect to and emulate. Our plan has a number of components: for each one, we list the technical  requirements of its design. The components of the SLAC Rubin Operations Center are:
+* Control Room
+* Collaboration Area
+* Observing Specialist Offices
 * Visitor Space
 * Public Access 
 Current FKB 1st Floor Plan 
-Figure 1 shows the current layout of cubicles, 2 lockable (but open-ceiling) offices, and a central huddle room, plus the two entrances to the space. The front door opens into a hallway behind the auditorium, which has a door to the outside at its North end. The back door opens into a corridor which leads to the stairs up to the 2nd and 3rd floors.
+Figure 3 shows the current layout of cubicles, 2 lockable (but open-ceiling) offices, and a central huddle room, plus the two entrances to the space. The front door opens into a hallway behind the auditorium, which has a door to the outside at its North end. The back door opens into a corridor which leads to the stairs up to the 2nd and 3rd floors.
   
 
-Figure 1: Current floorplan of the 1st floor of the Fred Kavli Building (051) at SLAC, adapted from the .
+Figure 3: Current floorplan of the 1st floor of the Fred Kavli Building (051) at SLAC.
 Rubin Summit Facility Control Room
-Below we show a set of figures illustrating the size and contents of the Summit Facility Control Room.
+Below we show a set of figures illustrating the size and contents of the Summit Facility Control Room. The central display consists of 3 large “OPS -SHARED” screens, mounted behind and above the “OPS-TEL” desktop monitors. Two separate displays support monitoring of the Camera and engineering systems respectively. The latter is only needed at the Summit: the SLAC Control Room only needs the OPS and CAM displays.
   
  
-Figure 2: View of the Summit Facility Control Room LOVE displays during an AuxTel run.
-Remote Observing Room Requirements
-Collaboration Area Requirements
+Figure 2: View of the Summit Facility Control Room LOVE displays during an AuxTel run. These are the main operations displays needed in each control room.
+  
+
+Figure 3: Plan of the Summit Facility Control Room, 
+from “Control Room Recommendations”, Rubin Confluence February 2021.
+
+
+Control Room Requirements
+1. Central OPS-SHARED screens plus OPS-TEL desk, with two chairs.
+2. Off-center CAM displays with two chairs.
+3. Screens sized to achieve similar angular field of view as on Summit.
+4. Lockable door(s) (preferably using SLAC cards for entry by short list of approved staff).
+5. Sufficient floorspace to allow comfortable movement through the room.
+6. Full system available by FY24Q2 to support LSST Cam “First Photon” observations. Early system installed during FY23 to develop room capability and support AuxTel observing. 
+Collaboration Area Requirements 
+1. Dedicated videoconference set-up (screen, camera, microphones) to support hybrid meetings by 6 people around main table.
+2. Additional seating for 6 more people in seminar mode.
+3. Whiteboard (wall mounted to save space).
+4. Lounge area close to kitchen (supplement existing sofa with 1-2 additional chairs).
+Observing Specialist Office Requirements
+1. Available January 2025
 Visitor Space Requirements
+1. Available Winter 2023 (already in place).
 Public Access Requirements
+1. Full or partial glass wall on back side of Control Room, plus additional window on side wall if possible.
+2. Introductory posters in collaboration area.
+
+
+________________
 Implementation Plan
 In this section, we will provide a  high-level overview of the steps required to complete the implementation of the design of the Center.
+* Salvage and/or purchase, install, configure and test Control Room equipment for interim Control Room in 114-A (only). Follow Base Control Room set-up ticket IHS-6162. (Tucson Control Room tickets IHS-2839 and IHS-3376 may also be useful.)
+* Work with KIPAC and SLAC Facilities to arrange partitioning of Control Room, redesign of interaction space and removal and replacement of partitions. Adjust design depending on how much glass can be used in the partition wall. 
+* Purchase, install, configure and test remaining Control Room equipment for final Control Room in 114-A-D.
+* Work with KIPAC, SLAC Facilities and IT to explore installation of SUSB-style videoconference system in collaboration area.
+________________
 Center Design Validation and User Testing
 Here we will provide an overview of the practices to be executed during the Center design cycle, as well as steps to be taken after the Center has been opened to verify that it satisfies the user groups’ needs.
+________________
 Operational Instructions
 In this section we will describe how to perform some common operational tasks at the Center. These descriptions will be revised to include more detail as the Center is developed.
 
@@ -227,4 +330,7 @@ In this section we will describe how to perform some common operational tasks at
 
 
 
-[a]Use Case 1 serves as a first example. Both this template and first example should be reviewed and improved before we build out more use cases.
+[a]@youtsumi@stanford.edu Do you want to say anything about how big the space needs to be, to allow the CCS engineers and Camera Support Scientists to work comfortably, perhaps along side an observing specialist? Also, what do you think about the relative orientation of the camera monitors with the main ops/LOVE displays? Its 90 degrees in the proposed design, will that be OK?
+[b]Yes, given the experience we have in the IR2 control room multiple people need to gather in one place so that they can work efficiently. It is hard to say how many people are in the operation phase. But to be flexible we should have desks with displays (for Camera Support Scientists and CCS Engineers? Scientists?), and a round table for extra usage would be great. 
+Also, we sometimes have trouble finding a power outlet in the IR2 control room. So make each desk with a display along with the wall have enough outlet for one person and the round table has the power outlet for multiple people use too.
+For the ops/LOVE displays, I didn't notice sections describing that. Also, I don't see the 90 degrees rotated to display in the summit. So I don't know where it comes from. But I agree in some cases such as logging purpose display RubinTV or Tony's Cantaloupe image viewer, the 90-degree rotated display is useful.
